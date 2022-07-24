@@ -1,6 +1,6 @@
 # SchoolWebsite
 Responsive School website
-
+ 
 #What I intend to use:
 - CSS Variables
 - CSS Grid and Flexbox
