@@ -21,14 +21,14 @@ for (let i = 0; i < 5; i++)
 
 
         let divInfo = document.createElement('div')
-        divAvatar.classList.add('testimonial_info')
+        divInfo.classList.add('testimonial_info')
 
         let h5 = document.createElement('h5')
 
         let small = document.createElement('small')
 
         let divBody = document.createElement('div')
-        divAvatar.classList.add('testimonial_body')
+        divBody.classList.add('testimonial_body')
 
         let p = document.createElement('p')
 
@@ -45,6 +45,7 @@ for (let i = 0; i < 5; i++)
         article.appendChild(divInfo)
         
         p.innerHTML = "Lorem ipsum dolor sit amet. Qui praesentium odio et aliquam nisi et enim quos ut sunt vero non iure animi aut nisi dolor ab sunt nostrum. Ut reprehenderit porro id dolores sapiente sit itaque doloremque ea perspiciatis debitis et impedit totam non Quis fugiat et similique voluptatem.";
+        
         divBody.appendChild(p)
         article.appendChild(divBody)
 
