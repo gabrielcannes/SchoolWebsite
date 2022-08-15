@@ -1,5 +1,5 @@
 const testimonialRequest = 'https://randomuser.me/api/'
-const section = document.getElementsByClassName('testimonials_container')
+const div = document.getElementsByClassName('swiper-wrapper')
 const list = document.createDocumentFragment()
 
 for (let i = 0; i < 5; i++)
@@ -13,6 +13,7 @@ for (let i = 0; i < 5; i++)
         
         let article = document.createElement('article')
         article.classList.add('testimonial')
+        article.classList.add('swiper-slide')
 
         let divAvatar = document.createElement('div')
         divAvatar.classList.add('avatar')
@@ -44,12 +45,12 @@ for (let i = 0; i < 5; i++)
 
         article.appendChild(divInfo)
         
-        p.innerHTML = "Lorem ipsum dolor sit amet. Qui praesentium odio et aliquam nisi et enim quos ut sunt vero non iure animi aut nisi dolor ab sunt nostrum. Ut reprehenderit porro id dolores sapiente sit itaque doloremque ea perspiciatis debitis et impedit totam non Quis fugiat et similique voluptatem.";
+        p.innerHTML = "Lorem ipsum dolor sit amet. Qui praesentium odio et aliquam nisi et enim quos ut sunt vero non iure animi aut nisi dolor ab sunt nostrum.";
         
         divBody.appendChild(p)
         article.appendChild(divBody)
 
-        section[0].appendChild(article)
+        div[0].appendChild(article)
     })
 }
 
