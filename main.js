@@ -19,3 +19,16 @@ faqs.forEach(faq => {
         else icon.className = 'uil uil-plus'
     })
 })
+
+// show nav menu in tablet/smartphone mode 
+const navMenu = document.querySelector('.nav_menu')
+const navMenuBtnOpen = document.querySelector('#open-menu-btn')
+const navMenuBtnClose = document.querySelector('#close-menu-btn')
+
+navMenuBtnOpen.addEventListener('click', () => {
+    if (navMenu.style.display === 'none'){
+        navMenu.style.display = 'flex'
+    } else {
+        navMenu.style.display = 'none'
+    }
+})

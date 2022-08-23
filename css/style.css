@@ -440,6 +440,7 @@ footer ul li a:hover {
         width: 18rem;
         flex-direction: column;
         gap: 0;
+        display: none;
     }
 
     .nav_menu li {
@@ -459,5 +460,123 @@ footer ul li a:hover {
     .nav_menu li a:hover {
         background: var(--color-bg2);
         color: var(--color-white);
+    }
+
+    /* TABLET HEADER */
+
+    header {
+        height: 52vh;
+        margin-bottom: 4rem;
+    }
+
+    .header_container {
+        gap: 0;
+        padding-bottom: 3rem;
+    }
+
+    /* TABLET CATEGORY  */
+    .categories {
+        height: auto;
+    }
+
+    .categories_container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .categories_left {
+        margin-right: 0;
+    }
+
+    /* TABLET POPULAR COURSES */
+    .courses {
+        margin-top: 0;
+    }
+
+    .courses_container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* TABLET FAQ */
+    .faqs_container {
+        grid-template-columns: 1fr;
+    }
+
+    .faq {
+        padding: 1.5rem;
+    }
+
+    /* TABLET FOOTER */
+
+    .footer_container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* MOBILE CSS */
+@media screen and (max-width: 600px){
+    .container {
+        width: var(--container-width-sm);
+    }
+
+    /* NAVBAR MOBILE */
+    .nav_menu {
+        right: 3%;
+    }
+
+    /* MOBILE HEADER */
+    header {
+        height: 100vh;
+    }
+
+    .header_container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        margin-top: 0rem;
+    }
+
+    .header_left p {
+        margin-bottom: 1.3rem;
+    }
+
+    /* MOBILE CATEGORIES  */
+    .categories_right {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem;
+    }
+
+    .category {
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    .category_icon {
+        margin-top: 4px;
+        display: inline-block;
+    }
+
+    /* MOBILE POPULAR COURSES */
+    .courses_container {
+        grid-template-columns: 1fr;
+    }
+
+    /* MOBILE TESTIMONIALS */
+    .testimonial_body {
+        padding: 1.2rem;
+    }
+
+    /* MOBILE FOOTER */
+    .footer_container{
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .footer_1 p {
+        margin: 1rem auto;
+    }
+
+    .footer_socials {
+        justify-content: center;
     }
 }
